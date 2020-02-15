@@ -1,0 +1,75 @@
+## Vypsání všeho
+
+SELECT
+*
+FROM
+jizda
+JOIN ridic ON (jizda.ridic = ridic.id)
+JOIN vozidlo ON (jizda.vozidlo = vozidlo.id)
+
+## 1
+
+SELECT
+jmeno
+FROM
+ridic
+
+## 2
+
+SELECT
+*
+FROM
+vozidlo
+
+## 3
+
+SELECT
+jizda.datum,
+vozidlo.spz,
+jizda.vzdalenost
+FROM
+jizda
+JOIN ridic ON (jizda.ridic = ridic.id)
+JOIN vozidlo ON (jizda.vozidlo = vozidlo.id)
+
+## 4
+
+SELECT
+jizda.datum,
+vozidlo.spz,
+jizda.vzdalenost,
+ridic.jmeno
+FROM
+jizda
+JOIN ridic ON (jizda.ridic = ridic.id)
+JOIN vozidlo ON (jizda.vozidlo = vozidlo.id)
+
+## 5
+
+SELECT
+jizda.datum,
+vozidlo.spz,
+jizda.vzdalenost,
+ridic.jmeno
+FROM
+jizda
+JOIN ridic ON (jizda.ridic = ridic.id)
+JOIN vozidlo ON (jizda.vozidlo = vozidlo.id)
+WHERE
+(jizda.vzdalenost > 30)
+
+## 6
+
+SELECT
+COUNT(ridic.id)
+FROM
+ridic
+
+## 7
+
+SELECT
+COUNT(jizda.id)
+FROM
+jizda
+WHERE
+(jizda.datum >= "2013-02-01") AND (jizda.datum < "2013-03-01")

@@ -49,3 +49,21 @@ Na konci se ještě vyplatí přidat speciální token *EOT*, kterým si ověř�
  ## Závorky
 
  Díky tomuto systematickému přístupu stačí do gramatiky přidat `F -> (E)`.
+
+## Parsování JSONu
+
+	{
+		"a": "b",
+		"c": {
+			"d": "e"
+		}
+	}
+
+	START -> DICT
+	DICT -> { KV_SEQ }
+	DICT -> { }
+	KV_SEQ -> KV , KV_SEQ
+	KV_SEQ -> KV
+	KV -> STR : VAL
+	VAL -> STR
+	VAL -> DICT

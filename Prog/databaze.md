@@ -41,36 +41,32 @@ GROUP BY
 kraj.id
 ```
 
-Chci-li spočítat, kolik měst je v jakém kraji, použiji `COUNT`. Pracovní tabulku ale musím odpovídajícím způsobem rozdělit do skupin.
+Chci-li spočítat, kolik měst je v jakém kraji, použiji `COUNT`. Pracovní tabulku ale musím odpovídajícím způsobem rozdělit do skupin. Skupiny lze dále filtrovat pomocí `HAVING`.
 
-## Jízdy
+## Vytvoření tabulky
 
-SELECT
-*
-FROM
-jizda
-JOIN ridic ON (jizda.ridic = ridic.id)
-JOIN vozidlo ON (jizda.vozidlo = vozidlo.id)
+```sql
+CREATE TABLE vozidlo (
+    `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    `spz` TEXT NOT NULL,
+    `typ` TEXT NOT NULL,
+    `nosnost` INTEGER NOT NULL
+);
+```
 
-1
+`NOT NULL` mi říká, že záznam nesmí být prázdný, `PRIMARY KEY` zase zajišťuje unikátnost.
 
-	SELECT
-	jmeno
-	FROM
-	ridic
-2
+Stejně tak lze data přidávat, měnit a mazat. Pokud záznam nechci nastavit, mám možnost `NULL`.
 
-	SELECT
-	*
-	FROM
-	vozidlo
-3
+```sql
+INSERT INTO vozidlo
+    ( id, nosnost, spz, typ )
+    VALUES ( 5, 5000, "1A9 89-45", "dodávka" )
 
-	SELECT
-	jizda.datum,
-	vozidlo.spz,
-	jizda.vzdalenost
-	FROM
-	jizda
-	JOIN ridic ON (jizda.ridic = ridic.id)
-	JOIN vozidlo ON (jizda.vozidlo = vozidlo.id)
+UPDATE vozidlo SET spz="1A8 89-45" WHERE id = 5
+
+DELETE FROM vozidlo WHERE id = 5
+```
+## Vypsání seznamu tabulek
+
+Záleží na poskytovateli, třeba `SHOW TABLES`, `DESCRIBE TABLES`, `SELECT * FROM sqlite_master`.
