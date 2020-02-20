@@ -15,9 +15,16 @@ BIOS = Firmware, první program po spuštění, vypálený na ROM, zkontroluje, 
 
 ALU = aritmeticko-logická jednotka
 Cache - rozdělené na (typicky tři) úrovně L1 (32 kB), L2 (256 kB), L3 (8 MB), každé jádro má vlastní L1, L3 je typicky sdílená. L1 je rozdělená na Instruction cache a Data cache. Vždy se současně vyšle požadavek do všech úrovní, z té nejrychlejší, kde je, tak jde zpátky a zároveň se nakopíruje do nižších cache.
-Registry - místo v paměti, kam se vejde jedno číslo (64bit procesor -> je velké právě tolik).
+Registry - místo v paměti, kam se vejde jedno číslo (64bit procesor -> registry jsou velké právě tolik). Je jich třeba 32, některé z nich pro všeobecné použití, jiné pro speciální čísla. Načítají se tam data z paměti, i když chci jenom 4 byty, stejně se jich vezme ještě 60 dalších a ty se všechny uloží do cache, protože je nejspíš budu potřebovat.
 Hodiny, posílají impulzy = ticky
+PC = program counter, jeden z registrů, určuje, kterou instrukci spustit
 Memory controler - komunikuje s cache a RAM
+
+### Vlákna
+
+Procesor zpracovává několik instrukcí najednou, protože stejně některé vyžadují práci s pamětí, jiné ALU, různé typy operací.
+
+Vlákna se vlastně tváří jako samostatný procesor, má vlastní registry, některé součástky jsou ale sdílené s jinými vlákny, aby se ušetřilo.
 
 ## Zdroj
 
