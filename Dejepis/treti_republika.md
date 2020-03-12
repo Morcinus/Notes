@@ -40,3 +40,18 @@ Nejhlasitějším projevem nesouhlasu s novým režimem byla emigrace, po Únoru
 
 Když se Stalin zbavil třídních nepřátel, začal hledat další v řadách strany. Podezřelí byli komunisté ze španělské občanské války, z Jugoslávie nebo z těch, kteří strávili válku na Západě. Byl veden proces s vedením protistátního spikleneckého centra, které vedl Rudolf Slánský. Ten měl židovský původ, stal se komunistou, válku strávil v Moskvě. Poté se stal druhým mužem ve straně, měl funkci generálního tajemníka. Měl ale smůlu na původ. Ve stejné době Stalin začíná procesy s židovskými lékaři, roku 1951 byl Rudolf Slánský souzen, tento proces je již v naprosté režii sovětů, každý odsouzený se učí svou roli nazpaměť, sám sebe obviňuje z velezrady a vražd. Všichni byli odsouzeni k smrti.
 
+## Venkov
+
+Byla zakázána agrární strana, mnoho venkovanů volilo komunisty. Pozemky po odsunutých Němcích rozděloval pozemkový úřad. Ministerstva vnitra, zahraničí i zemědělství dostala sovětské poradce. Roku 1949 se znovu objevila myšlenka kolektivizace. Byla zakládána JZD (jednotné zemědělské družstvo), vstup do nich byl dobrovnolný, často do nich vstupovali *domkaři* (ti, co mají jen dům, ne pole) a malí sedláci.
+
+U velkých sedláků se hledá záminka k represi. Předepsaly se jim takové dávky, které nemohly splnit. Daný sedlák byl obviněn ze sabotáže, jeho statek, stroje i dobytek byly zabaveny, s celou rodinou byl vystěhován jinam. Stali se de facto nezaměstnanými, což ale jurisdikce neznala, takže se vlastně provinili podruhé.
+
+Pod heslem "Venkov se přibližuje k městu" byly podnikány umělé zásahy do společnosti, byla zavedena osmihodinová pracovní doba (v zemědělství hloupost). V polovině padesátých let se členství v JZD stalo povinným. Byla zpřetrhána staletá tradice vztahu k půdě, po sovětském vzoru byly rozorány meze a vznikaly obrovské lány, začalo se hodně hnojit. Práci na polích nahradil průmysl, zejména hornictví.
+
+## Rozpočet
+
+Kolektivizované hospodářství bylo pochopitelně neefektivní, stát prodělával, a to hodně, i v pozdější fázi socialismu. Řešilo se to třeba měnovou reformou v roce 1954.
+
+---
+
+Hanzlíkův otec byl pokrývač. On sám učil techniku zpracování masa.
